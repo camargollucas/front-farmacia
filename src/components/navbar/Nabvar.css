@@ -1,0 +1,13 @@
+.logo {
+    margin-right: 20px; 
+  }
+  
+  .nav-links {
+    margin-left: auto; 
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
