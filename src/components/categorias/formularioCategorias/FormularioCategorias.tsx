@@ -35,7 +35,7 @@ function FormularioCategoria() {
 
         try {
             if (id !== undefined) {
-                await atualizar(`/categorias/${id}`, categoria, setCategoria);
+                await atualizar(`/categorias`, categoria, setCategoria);
                 alert('Categoria atualizada com sucesso');
             } else {
                 await cadastrar(`/categorias`, categoria, setCategoria);

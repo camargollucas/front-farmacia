@@ -5,12 +5,12 @@ const api = axios.create({
 })
 
 export const buscar = async (url: string, setDados: Function, header: Object = {}) => {
-  const resposta = await api.get(url, header);
+  const resposta = await api.get(url);
   setDados(resposta.data);
 }
 
-export const cadastrar = async (url: string, dados: Object, setDados: Function, header: Object = {}) => {
-  const resposta = await api.post(url, dados, header);
+export const cadastrar = async (url: string, dados: Object, setDados: Function) => {
+  const resposta = await api.post(url, dados);
   setDados(resposta.data);
 }
 
